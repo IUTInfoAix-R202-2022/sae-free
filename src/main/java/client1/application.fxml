@@ -6,9 +6,11 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client1.application">
    <children>
       <Button fx:id="btnhelp" layoutX="469.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonclicked" text="Besoin d'aide ?" />
-      <AnchorPane prefHeight="400.0" prefWidth="238.0" style="-fx-background-color: #27436B;" />
+      <AnchorPane layoutX="-4.0" layoutY="-6.0" prefHeight="406.0" prefWidth="234.0" style="-fx-background-color: #27436B;">
+         <children>
+            <Label layoutX="81.0" layoutY="23.0" prefHeight="24.0" prefWidth="66.0" text="MATIERES" textFill="#a8ade4" />
+            <Button layoutX="14.0" layoutY="57.0" mnemonicParsing="false" style="-fx-background-color: #a8ade4;" text="LANGUE" />
+         </children></AnchorPane>
       <Button layoutX="335" layoutY="350" mnemonicParsing="false" onAction="#buttonClickedFormulaire" text="Un projet à soumettre ?" />
    </children>
 </AnchorPane>
-
-

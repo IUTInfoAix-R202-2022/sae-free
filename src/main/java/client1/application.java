@@ -3,6 +3,7 @@ package client1;
 import java.io.IOException;
 import java.lang.*;
 import fr.univ_amu.iut.FranceMain;
+import fr.univ_amu.iut.view.map.France;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -18,9 +19,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-
-
-
 public class application extends Application {
 
     public static void main(String[]args){
@@ -31,9 +29,9 @@ public class application extends Application {
     public void start(Stage primaryStage) throws Exception{
 
             primaryStage.setTitle("Application DNE");
-            primaryStage.setResizable(false);
             Parent root = FXMLLoader.load(getClass().getResource("application.fxml"));
             primaryStage.setScene(new Scene(root, 600,400));
+            primaryStage.setResizable(false);
             primaryStage.show();
         }
 
@@ -63,7 +61,6 @@ public class application extends Application {
         app_stage.setResizable(false);
         app_stage.show();
     }
-
-    }
+}
 
 
