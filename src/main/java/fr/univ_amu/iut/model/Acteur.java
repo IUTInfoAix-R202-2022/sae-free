@@ -10,9 +10,11 @@ import jakarta.persistence.*;
 public class Acteur {
     @Id
     @GeneratedValue
+    @Column(name = "ID")
     int id;
-
+    @Column(name = "NAME")
     String nom;
+    @Column(name = "PRENOM")
     String prenom;
 
     @Embedded
