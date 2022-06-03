@@ -1,5 +1,6 @@
 package fr.univ_amu.iut.model;
 
+import fr.univ_amu.iut.view.map.AcademiePath;
 import jakarta.persistence.*;
 
 import java.util.Collection;
@@ -7,10 +8,13 @@ import java.util.HashMap;
 
 @Entity
 @Table(name = "Academie")
-@NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p WHERE p.nom =  :nom  " )
+@NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p  " )
 public class Academie {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private final static HashMap<String, Academie> INSTANCES = new HashMap<>();
+    @ManyToOne
+    @JoinColumn(name = "Discipline")
+    private Discipline id;
     @Transient
     public static Academie Mayotte = new Academie("MY", "Académie de Mayotte", RegionAcademique.Mayotte);
     @Transient
@@ -86,6 +90,9 @@ public class Academie {
     }
 
     public Academie() {
+        String nom;
+        String code;
+        RegionAcademique regionAcademique;
     }
 
     public static Academie get(String code) {
@@ -106,5 +113,13 @@ public class Academie {
 
     public RegionAcademique getRegionAcademique() {
         return regionAcademique;
+    }
+    @Override
+    public String toString() {
+        String s = "Académie [nom=" +
+                (code != null ? "nomEt=" +Mayotte+ ", " : "")+
+        (id != null ? "nomEt=" +id.getNom()+ ", " : "");
+        return s;
+
     }
 }

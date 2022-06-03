@@ -13,7 +13,6 @@ public class test {
         try(EntityManagerFactory emf = Persistence.createEntityManagerFactory("gestionUsagesPU")){
             try(EntityManager em = emf.createEntityManager()){
                 TypedQuery<Academie> query = em.createNamedQuery("Academie.findAll", Academie.class);
-                query.setParameter("nom","");
                 System.out.println(query.getResultList());
             }
         }

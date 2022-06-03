@@ -11,7 +11,7 @@ import jakarta.persistence.TypedQuery;
 
 import java.util.List;
 
-public abstract class DAOAcademieJPA implements DAOAcademie {
+public class DAOAcademieJPA implements DAOAcademie {
     private final EntityManager entityManager;
 
     public DAOAcademieJPA(EntityManager entityManager) {
@@ -22,7 +22,7 @@ public abstract class DAOAcademieJPA implements DAOAcademie {
         entityManager.persist(academie);
         entityManager.getTransaction().commit();
 
-        return entityManager.find(Academie.class, academie.getCode());
+        return entityManager.find(Academie.class, Academie.toutes());
     }
     public boolean update(Academie obj) {
         try {
@@ -35,13 +35,35 @@ public abstract class DAOAcademieJPA implements DAOAcademie {
             return false;
         }
     }
+
+    @Override
+    public boolean delete(Academie obj) {
+        return false;
+    }
+
     @Override
     public List<Academie> findAll() {
         TypedQuery<Academie> query = entityManager.createNamedQuery("Academie.findAll", Academie.class);
         return query.getResultList();
     }
+
+    @Override
+    public Academie getById(int id) {
+        return null;
+    }
+
+    @Override
+    public Academie getById(String id) {
+        return null;
+    }
+
     @Override
     public List<Academie> findByNom(String nom) {
+        return null;
+    }
+
+    @Override
+    public List<Academie> findByCode(String code) {
         return null;
     }
 
