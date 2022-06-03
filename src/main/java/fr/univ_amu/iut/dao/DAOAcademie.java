@@ -9,6 +9,8 @@ import java.util.List;
 
 public interface DAOAcademie extends DAO<Academie>{
 
+    Academie getById(String id);
+
     List<Academie> findByNom(String nom);
 
     List<Academie> findByCode(String code);

@@ -6,7 +6,10 @@ import java.util.Collection;
 import java.util.HashMap;
 
 @Entity
+@Table(name = "Academie")
+@NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p WHERE p.nom =  :nom  " )
 public class Academie {
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private final static HashMap<String, Academie> INSTANCES = new HashMap<>();
     @Transient
     public static Academie Mayotte = new Academie("MY", "Académie de Mayotte", RegionAcademique.Mayotte);
