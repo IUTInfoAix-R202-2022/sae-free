@@ -1,8 +1,7 @@
 package fr.univ_amu.iut.dao.jpa;
 
-import fr.univ_amu.iut.DAO.DAOModule;
 import fr.univ_amu.iut.dao.DAOAcademie;
-import fr.univ_amu.iut.entity.Prof;
+
 import fr.univ_amu.iut.model.Academie;
 import fr.univ_amu.iut.model.Discipline;
 import fr.univ_amu.iut.model.RegionAcademique;
@@ -16,8 +15,10 @@ public class DAOAcademieJPA implements DAOAcademie {
     public DAOAcademieJPA(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
+
+
     @Override
-    public boolean delete(Module obj) {
+    public boolean delete(Academie obj) {
         return false;
     }
 
@@ -27,19 +28,20 @@ public class DAOAcademieJPA implements DAOAcademie {
     }
 
     @Override
-    public Academie getById(String id) {
+    public Academie getById(int id) {
         return null;
     }
 
     @Override
-    public Module insert(Module obj) {
+    public Academie insert(Academie obj) {
         return null;
     }
 
     @Override
-    public boolean update(Module obj) {
+    public boolean update(Academie obj) {
         return false;
     }
+
 
     @Override
     public List<Academie> findByNom(String nom) {
