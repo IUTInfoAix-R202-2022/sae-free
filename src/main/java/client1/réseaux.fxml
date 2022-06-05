@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client1.application">
+   <children>
+      <TabPane layoutY="7.0" prefHeight="35.0" prefWidth="139.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="usage">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab onSelectionChanged="#buttonclickedReseaux" text="réseau">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="116.0" prefWidth="142.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
