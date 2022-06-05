@@ -2,8 +2,6 @@ package client1;
 
 import java.io.IOException;
 import java.lang.*;
-
-import fr.univ_amu.iut.view.map.FranceBuilder;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -19,15 +17,8 @@ public class application extends Application {
     }
 
 
-
     public void start(Stage primaryStage) throws Exception{
-        FranceBuilder carte = FranceBuilder.create();
-        //.backgroundColor(Color.web("#4aa9d7"))
-        //.fillColor(Color.web("#dcb36c"))
-        //.strokeColor(Color.web("#987028"))
-        //.hoverColor(Color.web("#fec47e"))
-        //.pressedColor(Color.web("#6cee85"))
-        //.selectedColor(Color.MAGENTA)
+
             primaryStage.setTitle("Application DNE");
             Parent root = FXMLLoader.load(getClass().getResource("application.fxml"));
             primaryStage.setScene(new Scene(root, 600,400));
