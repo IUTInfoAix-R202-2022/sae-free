@@ -6,7 +6,7 @@ import fr.univ_amu.iut.model.Usage;
 
 import java.util.List;
 
-public interface DAOUsage extends DAO<Usage>{
+public interface DAOUsage extends DAO<Usage, Number>{
 
     List<Acteur> findById(int id);
 

@@ -2,7 +2,7 @@ package fr.univ_amu.iut.dao;
 
 import java.util.List;
 
-public interface DAO<T> {
+public interface DAO<T, I extends Number> {
 
     /**
      * Permet la suppression d'un tuple de la base

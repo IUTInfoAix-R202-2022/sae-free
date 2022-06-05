@@ -4,10 +4,11 @@ import fr.univ_amu.iut.model.Academie;
 import fr.univ_amu.iut.model.Discipline;
 import fr.univ_amu.iut.model.RegionAcademique;
 
+
 import java.util.List;
 
 
-public interface DAOAcademie extends DAO<Academie>{
+public interface DAOAcademie extends DAO<Academie, Integer>{
 
     Academie getById(String id);
 

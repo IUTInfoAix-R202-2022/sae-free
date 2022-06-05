@@ -22,7 +22,7 @@ public class DAOAcademieJPA implements DAOAcademie {
         entityManager.persist(academie);
         entityManager.getTransaction().commit();
 
-        return entityManager.find(Academie.class, Academie.toutes());
+        return entityManager.find(Academie.class, academie.getNom());
     }
     public boolean update(Academie obj) {
         try {
@@ -38,7 +38,15 @@ public class DAOAcademieJPA implements DAOAcademie {
 
     @Override
     public boolean delete(Academie obj) {
-        return false;
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.remove(obj);
+            entityManager.getTransaction().commit();
+
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     @Override
@@ -51,6 +59,7 @@ public class DAOAcademieJPA implements DAOAcademie {
     public Academie getById(int id) {
         return null;
     }
+
 
     @Override
     public Academie getById(String id) {

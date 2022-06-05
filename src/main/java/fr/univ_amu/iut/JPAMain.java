@@ -1,5 +1,8 @@
 package fr.univ_amu.iut;
 
+import fr.univ_amu.iut.dao.DAOAcademie;
+import fr.univ_amu.iut.dao.factory.DAOFactoryProducer;
+import fr.univ_amu.iut.dao.factory.DAOType;
 import fr.univ_amu.iut.model.Acteur;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -211,6 +214,9 @@ public class JPAMain extends Application {
     }
 
     public static void main(String[] args) {
+        DAOAcademie dao = DAOFactoryProducer.getFactory(DAOType.JPA).createDAOAcademie();
+        System.out.println(dao.findAll());
+        System.out.println("\nOk.\n");
         launch(args);
     }
 

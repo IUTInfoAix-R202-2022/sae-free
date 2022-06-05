@@ -4,7 +4,7 @@ import fr.univ_amu.iut.model.Thematique;
 
 import java.util.List;
 
-public interface DAOThematique extends DAO<Thematique>{
+public interface DAOThematique extends DAO<Thematique, Number>{
 
     List<Thematique> findById(int id);
 

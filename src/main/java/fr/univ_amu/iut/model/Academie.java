@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.HashMap;
 
 @Entity
-@Table(name = "Academie")
+@Table(name = "ACADEMIE")
 @NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p  " )
 public class Academie {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -103,6 +103,7 @@ public class Academie {
         return INSTANCES.values();
     }
 
+
     public String getCode() {
         return code;
     }
@@ -116,10 +117,7 @@ public class Academie {
     }
     @Override
     public String toString() {
-        String s = "Académie [nom=" +
-                (code != null ? "nomEt=" +Mayotte+ ", " : "")+
-        (id != null ? "nomEt=" +id.getNom()+ ", " : "");
-        return s;
+        return "nom =" + Mayotte;
 
     }
 }

@@ -16,6 +16,8 @@ public class DAOFactoryJPA implements DAOFactory {
         }
         return entityManager;
     }
+    public DAOFactoryJPA(){
+    }
     @Override
     public DAOAcademie createDAOAcademie() {
         return new DAOAcademieJPA(getEntityManager());
