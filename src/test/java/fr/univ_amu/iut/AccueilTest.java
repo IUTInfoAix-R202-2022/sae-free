@@ -12,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.testfx.api.FxAssert.verifyThat;
 import static org.testfx.util.NodeQueryUtils.hasText;
 
+
 @ExtendWith(ApplicationExtension.class)
 public class AccueilTest {
     Stage stage;
