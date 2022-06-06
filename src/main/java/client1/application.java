@@ -20,7 +20,6 @@ public class application extends Application {
         launch(args);
     }
 
-
     public void start(Stage primaryStage) throws Exception{
 
             primaryStage.setTitle("Application DNE");
@@ -37,6 +36,7 @@ public class application extends Application {
         //.hoverColor(Color.web("#fec47e"))
         //.pressedColor(Color.web("#6cee85"))
         //.selectedColor(Color.MAGENTA)
+
 
             primaryStage.show();
         }
@@ -72,6 +72,15 @@ public class application extends Application {
 
     public void buttonClickedReturn (ActionEvent event) throws IOException {
         Parent loader = FXMLLoader.load(getClass().getResource("application.fxml"));
+        Scene scene = new Scene(loader);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.setScene(scene);
+        app_stage.setResizable(false);
+        app_stage.show();
+    }
+
+    public void buttonclickedSearch (ActionEvent event) throws IOException {
+        Parent loader = FXMLLoader.load(getClass().getResource("JPA.fxml"));
         Scene scene = new Scene(loader);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app_stage.setScene(scene);

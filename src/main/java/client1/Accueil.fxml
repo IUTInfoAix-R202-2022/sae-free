@@ -11,7 +11,7 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Button layoutX="481.0" layoutY="326.0" mnemonicParsing="false" onAction="#buttonClickedReturn" prefHeight="58.0" prefWidth="107.0" style="-fx-background-color: #1d3557; -fx-border-color: #8b91cd;" text="Accéder à l'application" textAlignment="CENTER" textFill="#8b91cd" wrapText="true" />
+      <Button fx:id="btnapp" layoutX="481.0" layoutY="326.0" mnemonicParsing="false" onAction="#buttonClickedReturn" prefHeight="58.0" prefWidth="107.0" style="-fx-background-color: #1d3557; -fx-border-color: #8b91cd;" text="Accéder à l'application" textAlignment="CENTER" textFill="#8b91cd" wrapText="true" />
       <Pane layoutX="126.0" layoutY="127.0" prefHeight="254.0" prefWidth="348.0" style="-fx-background-color: #8b91cd;">
          <children>
             <Label layoutX="61.0" layoutY="50.0" prefHeight="179.0" prefWidth="244.0" text="Bienvenue dans cette application qui a pour but de visualiser tous les usages pédagogiques innovants." textFill="#1d3557" wrapText="true">
