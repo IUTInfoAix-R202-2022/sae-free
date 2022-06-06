@@ -12,7 +12,8 @@ public class AfficheModuleDAOJPA {
     public static void main(String[] args) {
 
         DAOAcademie dao = (DAOAcademie) DAOFactoryProducer.getFactory(DAOType.JPA).createDAOAcademie();
-        System.out.println(Academie.findAll());
+       // System.out.println(Academie.findAll());
         System.out.println("\nOk.\n");
     }
 }
+
