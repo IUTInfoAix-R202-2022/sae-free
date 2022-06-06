@@ -26,19 +26,6 @@ application extends Application {
             primaryStage.setTitle("Application DNE");
             Parent root = FXMLLoader.load(getClass().getResource("Accueil.fxml"));
             primaryStage.setScene(new Scene(root, 600,400));
-
-            //primaryStage.setResizable(false);
-        France carte = new France();
-
-        AnchorPane carte1 = new AnchorPane(carte);
-        //.backgroundColor(Color.web("#4aa9d7"))
-        //.fillColor(Color.web("#dcb36c"))
-        //.strokeColor(Color.web("#987028"))
-        //.hoverColor(Color.web("#fec47e"))
-        //.pressedColor(Color.web("#6cee85"))
-        //.selectedColor(Color.MAGENTA)
-
-
             primaryStage.show();
         }
 
