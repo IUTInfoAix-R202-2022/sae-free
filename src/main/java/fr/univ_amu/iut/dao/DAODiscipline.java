@@ -5,7 +5,7 @@ import fr.univ_amu.iut.model.Discipline;
 
 import java.util.List;
 
-public interface DAODiscipline extends DAO<DAODiscipline, Number>{
+public interface DAODiscipline extends DAO<Discipline, Number>{
     List<Discipline> findByNom(String nom);
 
     List<Discipline> findById(String id);

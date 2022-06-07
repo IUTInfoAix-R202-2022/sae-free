@@ -13,7 +13,7 @@ public class DAOThematiqueJPA implements DAOThematique {
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<Thematique> findAll() {
         return null;
     }
 

@@ -13,7 +13,7 @@ public class DAORessourceJPA implements DAORessource {
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<Ressource> findAll() {
         return null;
     }
 

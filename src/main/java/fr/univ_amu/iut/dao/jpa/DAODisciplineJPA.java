@@ -8,27 +8,27 @@ import java.util.List;
 
 public class DAODisciplineJPA implements DAODiscipline {
     @Override
-    public boolean delete(DAODiscipline obj) {
+    public boolean delete(Discipline obj) {
         return false;
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<Discipline> findAll() {
         return null;
     }
 
     @Override
-    public DAODiscipline getById(int id) {
+    public Discipline getById(int id) {
         return null;
     }
 
     @Override
-    public DAODiscipline insert(DAODiscipline obj) {
+    public Discipline insert(Discipline obj) {
         return null;
     }
 
     @Override
-    public boolean update(DAODiscipline obj) {
+    public boolean update(Discipline obj) {
         return false;
     }
 

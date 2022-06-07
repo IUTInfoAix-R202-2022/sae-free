@@ -14,7 +14,7 @@ public class DAOUsageJPA implements DAOUsage {
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<Usage> findAll() {
         return null;
     }
 

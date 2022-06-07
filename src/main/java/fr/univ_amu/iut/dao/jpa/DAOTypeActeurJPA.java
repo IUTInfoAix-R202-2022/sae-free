@@ -13,7 +13,7 @@ public class DAOTypeActeurJPA implements DAOTypeActeur {
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<TypeActeur> findAll() {
         return null;
     }
 

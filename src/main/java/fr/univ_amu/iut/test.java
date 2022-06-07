@@ -9,23 +9,23 @@ import java.sql.SQLException;
 
 
 public class test {
-    public static void main(String[] args) {
+    public static String main(String[] args) throws SQLException {
 
 
-        Connection con;
+        Connection connexion;
         {
             try {
-                con = DriverManager.getConnection("jdbc:postgresql://castor.db.elephantsql.com/ldtefamu", "ldtefamu", "P9-z5ao1AZ5iPG9X3QBkbZNr3-w725g6");
+                connexion = DriverManager.getConnection("jdbc:postgresql://castor.db.elephantsql.com/ldtefamu", "ldtefamu", "P9-z5ao1AZ5iPG9X3QBkbZNr3-w725g6");
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
         }
 
         ResultSet resultats = null;
-        String requete = "SELECT commentaires_facultatif FROM test ";
+        String requete = "SELECT type_dacteurs, identité_des_acteurs_nom_prénom FROM test ";
 
         try {
-            Statement stmt = con.createStatement();
+            Statement stmt = connexion.createStatement();
             resultats = stmt.executeQuery(requete);
         } catch (SQLException e) {
             //traitement de l'exception
@@ -44,7 +44,9 @@ public class test {
             System.out.println("échec de la requête 3");
             throw new RuntimeException(ex);
         }
+
         while (true) {
+
             try {
                 if (!resultats.next()) break;
             } catch (SQLException ex) {
@@ -65,15 +67,11 @@ public class test {
             }
             System.out.println();
         }
-        try {
-            resultats.close();
-        } catch (SQLException ex) {
-            System.out.println("échec de la requête 6");
-            throw new RuntimeException(ex);
-        }
 
+        return requete;
     }
-    }
+
+}
 
 
 // Affichage du resultat

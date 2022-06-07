@@ -1,9 +1,8 @@
 package fr.univ_amu.iut.dao.jpa;
 
 import fr.univ_amu.iut.dao.DAOActeur;
-import fr.univ_amu.iut.model.Academie;
 import fr.univ_amu.iut.model.Acteur;
-import fr.univ_amu.iut.model.Discipline;
+import fr.univ_amu.iut.model.Coordonees;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
@@ -30,8 +29,9 @@ public class DAOActeurJPA implements DAOActeur {
     }
 
     @Override
-    public List<Academie> findAll() {
-        return null;
+    public List<Acteur> findAll() {
+        TypedQuery<Acteur> query = entityManager.createNamedQuery("Acteur.findAll", Acteur.class);
+        return query.getResultList();
     }
 
     @Override
@@ -76,8 +76,9 @@ public class DAOActeurJPA implements DAOActeur {
         return null;
     }
 
+
     @Override
-    public List<Acteur> findByDiscipline(Discipline nom) {
+    public List<Acteur> findByCoordonees(Coordonees coordonees) {
         return null;
     }
 }

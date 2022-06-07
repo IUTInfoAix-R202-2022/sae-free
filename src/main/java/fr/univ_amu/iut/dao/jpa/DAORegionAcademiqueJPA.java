@@ -13,7 +13,7 @@ public class DAORegionAcademiqueJPA implements DAORegionAcademique {
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<RegionAcademique> findAll() {
         return null;
     }
 

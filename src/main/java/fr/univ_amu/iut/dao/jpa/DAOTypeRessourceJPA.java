@@ -13,7 +13,7 @@ public class DAOTypeRessourceJPA implements DAOTypeRessource {
     }
 
     @Override
-    public List<Academie> findAll() {
+    public List<TypeRessource> findAll() {
         return null;
     }
 

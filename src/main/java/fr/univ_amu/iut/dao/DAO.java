@@ -18,7 +18,7 @@ public interface DAO<T, I extends Number> {
      *
      * @return liste de tous les objets contenus dans la base
      */
-    List<Academie> findAll();
+    List<T> findAll();
 
     /**
      * Permet de récupérer un objet via son ID
