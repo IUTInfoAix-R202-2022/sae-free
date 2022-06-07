@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class AfficheActeur {
+public class AfficheAcademie {
     public static void main(String[] args) {
 
         try{
@@ -14,13 +14,12 @@ public class AfficheActeur {
 
             Statement instruction = connexion.createStatement();
 
-            ResultSet resultat = instruction.executeQuery("SELECT * FROM Acteur");
+            ResultSet resultat = instruction.executeQuery("SELECT * FROM typeacteur");
             while(resultat.next()){
 
                 System.out.println("---------------------------");
-                System.out.println("Nom du client: "+resultat.getInt("ID"));
+                System.out.println("Académie: "+resultat.getInt("ID"));
                 System.out.println("Nom: "+resultat.getString("NOM"));
-                System.out.println("prenom: "+resultat.getString("PRENOM"));
 
             }
         } catch (Exception e){

@@ -2,7 +2,6 @@ package fr.univ_amu.iut.model;
 
 import jakarta.persistence.*;
 
-import java.util.Collection;
 
 @NamedQueries({
         @NamedQuery(name = "Acteur.findAll", query = "SELECT p FROM Acteur p "),
@@ -14,7 +13,7 @@ public class Acteur {
     @GeneratedValue
     @Column(name = "ID")
     int id;
-    @Column(name = "NAME")
+    @Column(name = "NOM")
     String nom;
     @Column(name = "PRENOM")
     String prenom;

@@ -1,8 +1,6 @@
 package fr.univ_amu.iut;
 
-import fr.univ_amu.iut.dao.DAOAcademie;
-import fr.univ_amu.iut.dao.factory.DAOFactoryProducer;
-import fr.univ_amu.iut.dao.factory.DAOType;
+
 import fr.univ_amu.iut.model.Acteur;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

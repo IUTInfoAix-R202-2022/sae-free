@@ -1,5 +1,6 @@
 package fr.univ_amu.iut.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -8,7 +9,9 @@ import jakarta.persistence.Id;
 public class TypeActeur {
     @Id
     @GeneratedValue
+    @Column(name = "ID")
     int id;
+    @Column(name = "Nom")
     String nom;
 
     public TypeActeur(String nom) {

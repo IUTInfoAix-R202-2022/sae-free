@@ -9,7 +9,7 @@ import java.sql.SQLException;
 
 
 public class test {
-    public static String main(String[] args) throws SQLException {
+    public static String main(String[] salut) throws SQLException {
 
 
         Connection connexion;
@@ -22,7 +22,7 @@ public class test {
         }
 
         ResultSet resultats = null;
-        String requete = "SELECT type_dacteurs, identité_des_acteurs_nom_prénom FROM test ";
+        String requete = "SELECT nom, prenom, id  FROM acteur";
 
         try {
             Statement stmt = connexion.createStatement();
