@@ -1,9 +1,13 @@
 package client1;
 
+import fr.univ_amu.iut.model.Acteur;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AfficheActeur {
     public static void main(String[] args) {
@@ -15,15 +19,19 @@ public class AfficheActeur {
             Statement instruction = connexion.createStatement();
 
             ResultSet resultat = instruction.executeQuery("SELECT * FROM Acteur");
+
             while(resultat.next()){
 
-                System.out.println("---------------------------");
-                System.out.println("Nom du client: "+resultat.getInt("ID"));
-                System.out.println("Nom: "+resultat.getString("NOM"));
-                System.out.println("prenom: "+resultat.getString("PRENOM"));
+                  List<Acteur> acteurs = new ArrayList<>();
+                    Acteur acteur =new Acteur();
+                    acteur.setNumero(resultat.getInt("ID"));
+                    acteur.setNom(resultat.getString("NOM"));
+                    acteur.setPrenom(resultat.getString("PRENOM"));
+                    acteur.setTypeActeur(resultat.getString("TYPEAC"));
+                    acteurs.add(acteur);
+                System.out.println(acteurs);
+                }
 
-
-            }
         } catch (Exception e){
 
             e.printStackTrace();

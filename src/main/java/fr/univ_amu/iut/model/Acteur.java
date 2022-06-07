@@ -20,7 +20,7 @@ public class Acteur {
 
     @Embedded
     Coordonees coordonees;
-
+    @Column(name = "TYPEAC")
     @ManyToOne(cascade = CascadeType.ALL)
     TypeActeur typeActeur;
 

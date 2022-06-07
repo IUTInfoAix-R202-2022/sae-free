@@ -11,7 +11,7 @@ public class TypeActeur {
     @GeneratedValue
     @Column(name = "ID")
     int id;
-    @Column(name = "Nom")
+    @Column(name = "NOM")
     String nom;
 
     public TypeActeur(String nom) {

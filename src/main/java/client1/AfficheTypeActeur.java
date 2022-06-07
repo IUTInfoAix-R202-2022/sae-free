@@ -1,9 +1,14 @@
 package client1;
 
+import fr.univ_amu.iut.model.Acteur;
+import fr.univ_amu.iut.model.TypeActeur;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AfficheTypeActeur {
     public static void main(String[] args) {
@@ -18,8 +23,9 @@ public class AfficheTypeActeur {
             while(resultat.next()){
 
                 System.out.println("---------------------------");
-                System.out.println("Académie: "+resultat.getInt("ID"));
+                System.out.println("Type Acteur: "+resultat.getInt("ID"));
                 System.out.println("Nom: "+resultat.getString("NOM"));
+
 
             }
         } catch (Exception e){
