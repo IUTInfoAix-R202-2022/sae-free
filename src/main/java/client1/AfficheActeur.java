@@ -22,6 +22,7 @@ public class AfficheActeur {
                 System.out.println("Nom: "+resultat.getString("NOM"));
                 System.out.println("prenom: "+resultat.getString("PRENOM"));
 
+
             }
         } catch (Exception e){
 

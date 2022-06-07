@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class AfficheAcademie {
+public class AfficheTypeActeur {
     public static void main(String[] args) {
 
         try{
