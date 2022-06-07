@@ -22,7 +22,7 @@ public class DAOAcademieJPA implements DAOAcademie {
         entityManager.persist(academie);
         entityManager.getTransaction().commit();
 
-        return entityManager.find(Academie.class, academie.getNom());
+        return entityManager.find(Academie.class, academie.getCode());
     }
     public boolean update(Academie obj) {
         try {

@@ -11,8 +11,8 @@ public class DAOFactoryJPA implements DAOFactory {
 
     public EntityManager getEntityManager() {
         if(entityManager == null){
-            EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("gestionUsagesPU");
-            entityManager = entityManagerFactory.createEntityManager();
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("gestionUsagesPU");
+            entityManager = emf.createEntityManager();
         }
         return entityManager;
     }

@@ -1,6 +1,5 @@
 package fr.univ_amu.iut.model;
 
-import fr.univ_amu.iut.view.map.AcademiePath;
 import jakarta.persistence.*;
 
 import java.util.Collection;
@@ -8,7 +7,7 @@ import java.util.HashMap;
 
 @Entity
 @Table(name = "ACADEMIE")
-@NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p  " )
+@NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p " )
 public class Academie {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private final static HashMap<String, Academie> INSTANCES = new HashMap<>();

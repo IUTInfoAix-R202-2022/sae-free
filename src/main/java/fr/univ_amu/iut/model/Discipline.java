@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Discipline")
+@NamedQuery(name = "Discipline.findByNom", query = "Select d FROM Discipline d WHERE d.nom = :nom")
 public class Discipline {
     @Transient
     public static Discipline Toutes = new Discipline("Toutes disciplines");

@@ -9,11 +9,13 @@ import jakarta.persistence.TypedQuery;
 
 
 public class test {
+
     public static void main(String[] args) {
         try(EntityManagerFactory emf = Persistence.createEntityManagerFactory("gestionUsagesPU")){
             try(EntityManager em = emf.createEntityManager()){
                 TypedQuery<Academie> query = em.createNamedQuery("Academie.findAll", Academie.class);
                 System.out.println(query.getResultList());
+                System.out.println();
             }
         }
     }
