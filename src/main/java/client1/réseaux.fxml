@@ -3,8 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="carte" prefHeight="1080.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client1.application">
+<AnchorPane fx:id="carte" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client1.application">
    <children>
-      <ToggleButton layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClickedReturn" text="Usage" />
+      <ToggleButton layoutX="550.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClickedReturn" text="Usage" />
    </children>
 </AnchorPane>
+

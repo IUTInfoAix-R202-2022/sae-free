@@ -14,6 +14,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class
@@ -26,7 +27,7 @@ application extends Application {
     public void start(Stage primaryStage) throws Exception{
 
             primaryStage.setTitle("Application DNE");
-            primaryStage.setFullScreen(true);
+            primaryStage.setResizable(true);
             Parent root = FXMLLoader.load(getClass().getResource("Accueil.fxml"));
             primaryStage.setScene(new Scene(root));
             primaryStage.show();
@@ -48,7 +49,7 @@ application extends Application {
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app_stage.setFullScreen(true);
         France france = FranceBuilder.create()
-                //.backgroundColor(Color.web("#4aa9d7"))
+                .backgroundColor(Color.web("#1d3557"))
                 //.fillColor(Color.web("#dcb36c"))
                 //.strokeColor(Color.web("#987028"))
                 //.hoverColor(Color.web("#fec47e"))
@@ -61,8 +62,8 @@ application extends Application {
                 .selectionEnabled(true)
                 .build();
 
-        france.setLayoutX(675);
-        france.setLayoutY(20);
+        france.setLayoutX(-70);
+        france.setLayoutY(-85);
         app_stage.setScene(scene);
         loader.getChildren().add(france);
         app_stage.show();
@@ -88,6 +89,7 @@ application extends Application {
         app_stage.show();
     }
 }
+
 
 
 

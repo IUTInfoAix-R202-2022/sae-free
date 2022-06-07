@@ -25,7 +25,7 @@ public class AcademiePath extends SVGPath {
         Tooltip.install(this, tooltip);
         if (null == content) return;
         setContent(content);
-        getTransforms().add(Transform.affine(0.3333333,0,0,-1.3333333,-79.268904,937.80293));
+        getTransforms().add(Transform.affine(0.90,0,0,-0.5,80.268904,500.80293));
         INSTANCES.put(academie,this);
     }
 
