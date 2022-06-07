@@ -25,7 +25,7 @@ public class DAOFactoryJPA implements DAOFactory {
 
     @Override
     public DAOActeur createDAOActeur() {
-        return null;
+        return new DAOActeurJPA(getEntityManager());
     }
 
     @Override

@@ -115,9 +115,11 @@ public class Academie {
     public RegionAcademique getRegionAcademique() {
         return regionAcademique;
     }
+
     @Override
     public String toString() {
-        return ""+"Academie = " + nom
-                ;
+        return "Academie{" +
+                ", code='" + code + '\'' +
+                ", nom='" + nom + '\'' ;
     }
 }
