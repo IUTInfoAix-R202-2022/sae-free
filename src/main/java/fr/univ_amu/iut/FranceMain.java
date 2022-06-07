@@ -36,7 +36,7 @@ public class FranceMain extends Application {
     public void start(Stage stage) {
         StackPane pane = new StackPane(france);
         pane.setBackground(new Background(new BackgroundFill(france.getBackgroundColor(), CornerRadii.EMPTY, Insets.EMPTY)));
-        Scene scene = new Scene(pane);
+        Scene scene = new Scene(pane, 200,200);
         stage.setTitle("Carte des académie");
         stage.setScene(scene);
         stage.show();

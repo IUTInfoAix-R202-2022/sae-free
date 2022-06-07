@@ -1,3 +1,4 @@
+/*
 package fr.univ_amu.iut;
 import client1.application;
 import javafx.stage.Stage;
@@ -16,4 +17,7 @@ import static org.testfx.util.NodeQueryUtils.hasText;
 
 @ExtendWith(ApplicationExtension.class)
 public class ApplicationTest {
+
+
 }
+*/

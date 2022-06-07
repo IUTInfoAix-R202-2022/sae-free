@@ -3,9 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client1.application">
+<AnchorPane fx:id="anchorpaneapp" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client1.application">
    <children>
-      <Button fx:id="btnhelp" layoutX="469.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonclicked" text="Besoin d'aide ?" />
+      <Button fx:id="btnhelp" layoutX="469.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClickedReturn" text="Besoin d'aide ?" />
       <AnchorPane layoutX="-4.0" layoutY="-6.0" prefHeight="406.0" prefWidth="234.0" style="-fx-background-color: #27436B;">
          <children>
             <ToggleButton layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonclickedReseaux" text="réseau" />
@@ -55,5 +55,3 @@
       <Button layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClickedFormulaire" prefHeight="24.0" prefWidth="179.0" text="Un projet à soumettre ?" />
    </children>
 </AnchorPane>
-
-
