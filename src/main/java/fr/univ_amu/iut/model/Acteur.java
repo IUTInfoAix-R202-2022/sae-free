@@ -3,7 +3,7 @@ package fr.univ_amu.iut.model;
 import jakarta.persistence.*;
 
 @NamedQueries({
-        @NamedQuery(name = "Acteur.findAll", query = "SELECT p FROM Acteur p"),
+        @NamedQuery(name = "Acteur.findAll", query = "SELECT p FROM Acteur p "),
         @NamedQuery(name = "Acteur.findById", query = "SELECT p FROM Acteur p WHERE p.id = :id"),
 })
 @Entity

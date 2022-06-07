@@ -214,9 +214,6 @@ public class JPAMain extends Application {
     }
 
     public static void main(String[] args) {
-        DAOAcademie dao = DAOFactoryProducer.getFactory(DAOType.JPA).createDAOAcademie();
-        System.out.println(dao.findAll());
-        System.out.println("\nOk.\n");
         launch(args);
     }
 

@@ -1,13 +1,13 @@
 package fr.univ_amu.iut.model;
 
-import jakarta.persistence.*;
 
+import jakarta.persistence.*;
 import java.util.Collection;
 import java.util.HashMap;
 
 @Entity
 @Table(name = "ACADEMIE")
-@NamedQuery(name = "Academie.findAll", query="SELECT p FROM Academie p " )
+@NamedQuery(name = "Academie.findAll", query="SELECT p FROM  Academie p" )
 public class Academie {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private final static HashMap<String, Academie> INSTANCES = new HashMap<>();
@@ -111,12 +111,13 @@ public class Academie {
         return nom;
     }
 
+
     public RegionAcademique getRegionAcademique() {
         return regionAcademique;
     }
     @Override
     public String toString() {
-        return "nom =" + Mayotte;
-
+        return ""+"Academie = " + nom
+                ;
     }
 }

@@ -1,5 +1,7 @@
 package fr.univ_amu.iut.dao;
 
+import fr.univ_amu.iut.model.Academie;
+
 import java.util.List;
 
 public interface DAO<T, I extends Number> {
@@ -16,7 +18,7 @@ public interface DAO<T, I extends Number> {
      *
      * @return liste de tous les objets contenus dans la base
      */
-    List<T> findAll();
+    List<Academie> findAll();
 
     /**
      * Permet de récupérer un objet via son ID

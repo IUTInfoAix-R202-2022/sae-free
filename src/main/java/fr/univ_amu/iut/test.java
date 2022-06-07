@@ -22,7 +22,7 @@ public class test {
         }
 
         ResultSet resultats = null;
-        String requete = "SELECT Académie FROM test ";
+        String requete = "SELECT commentaires_facultatif FROM test ";
 
         try {
             Statement stmt = con.createStatement();
