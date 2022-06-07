@@ -8,7 +8,8 @@ import java.util.ResourceBundle;
 
 import static javafx.application.Application.launch;
 
-public class Recherches implements Initializable {
+public class
+Recherches implements Initializable {
 
 
     public static void main(String[]args){

@@ -12,7 +12,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnexionUnique {
+public class
+ConnexionUnique {
     static final String CONNECT_URL = "jdbc:postgresql://castor.db.elephantsql.com/ldtefamu";
     static final String LOGIN = "ldtefamu";
     static final String PASSWORD = "P9-z5ao1AZ5iPG9X3QBkbZNr3-w725g6";
